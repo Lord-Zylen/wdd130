@@ -1,3 +1,10 @@
+/* Universal Box Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --main-width: 960px;
   --section-width: 600px;
@@ -34,20 +41,36 @@ main img {
 }
 
 
+.profile-img {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: var(--img-small-width);
+  height: auto;
+}
+
+
 aside {
   width: var(--aside-width);
   margin: 20px auto;
-  border: var(--border-thin);
-  padding: 10px;
-  background-color: var(--aside-bg-color); 
-  color: var(--text-color);
 }
 
-aside img {
+.image-container {
+  position: relative;
+}
+
+.image-container img {
   width: var(--img-medium-width);
   height: auto;
 }
 
+.image-container h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
 
 p {
   padding: 0;
@@ -79,4 +102,13 @@ h1 {
   font-size: var(--heading-size);
   color: var(--accent-color);
   margin-bottom: 1rem;
+}
+
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  background-color: #e6f7ff;
+  color: var(--text-color);
 }
