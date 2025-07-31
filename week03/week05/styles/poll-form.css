@@ -1,0 +1,124 @@
+/* Reset and Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Global Font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  padding: 30px;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #2c1f75;
+  font-size: 1.8rem;
+}
+
+/* Form Container */
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  display: grid;
+  gap: 25px;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+legend {
+  font-weight: bold;
+  color: #2c1f75;
+  padding: 0 10px;
+  font-size: 1.1rem;
+}
+
+/* Form Items Layout */
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 5px 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+  margin: 5px 0;
+}
+
+/* Labels */
+label {
+  text-align: right;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+/* Inputs, Select, Textarea */
+input, select, textarea {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0b0b99;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  justify-self: center;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #030374;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}

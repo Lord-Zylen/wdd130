@@ -1,0 +1,221 @@
+/* Root and Typography */
+:root {
+  --primary-color: #0d47a1;
+  --secondary-color: #1565c0;
+  --accent-color: #42a5f5;
+  --light-gray: #f5f5f5;
+  --dark-gray: #333;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header img {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav .active {
+  border-bottom: 2px solid white;
+}
+
+/* Main Layout */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-info,
+form {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2,
+form h2 {
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team figure {
+  text-align: center;
+  width: 150px;
+}
+
+.team img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.team figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Form Styling */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+}
+
+form button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+footer .social-icons {
+  margin-top: 1rem;
+}
+
+footer .social-icons a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team figure {
+    width: 100px;
+  }
+}
