@@ -2,96 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="Alex Osei Sarpong"/>
-  <meta name="description" content="Contact White Water Rafting to plan your next adventure!"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alex Osei Sarpong" />
+  <meta name="description" content="Contact White Water Rafting for adventure bookings, questions, or feedback." />
   <title>Contact Us | White Water Rafting</title>
-  <link rel="stylesheet" href="styles/contact.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="White Water Rafting Logo" />
+    <img src="images/logo.jpg" alt="White Water Rafting Logo" />
     <h1>White Water Rafting</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="contact-info">
-      <h2>Contact Information</h2>
-      <p>Address: 123 River Lane, Adventure City</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: contact@whitewaterrafting.com</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126421.65576113444!2d-122.50764045!3d37.7578145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3aee9e9e5d%3A0x52e6d8e4d0ea12cf!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1650000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>Contact Us</h2>
+      <p>Address: 123 Rapids Street, River City, USA</p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <p>Email: info@whitewaterrafting.com</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1970645220046!2d-122.41941518468133!3d37.774929779759675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e2eec3c7e87%3A0xdbc1e89e91f401b!2sWhite%20Water%20Rafting!5e0!3m2!1sen!2sus!4v1621200000000!5m2!1sen!2sus"
+        width="100%" height="300" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
 
-    <section class="team">
-      <figure>
-        <img src="images/employee1.jpg" alt="Team member Alex - Guide" />
-        <figcaption>Alex - Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee2.jpg" alt="Team member Rita - Reservations" />
-        <figcaption>Rita - Reservations</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee3.jpg" alt="Team member James - Safety Officer" />
-        <figcaption>James - Safety Officer</figcaption>
-      </figure>
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="profiles">
+        <figure>
+          <img src="images/employee1.jpg" alt="Emily - Customer Service" />
+          <figcaption>Emily - Customer Service</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Jake - Tour Guide" />
+          <figcaption>Jake - Tour Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Samantha - Booking Manager" />
+          <figcaption>Samantha - Booking Manager</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <form method="post" action="#">
+    <section class="contact-form">
       <h2>Send Us a Message</h2>
-
-      <div class="form-group">
+      <form>
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required />
-      </div>
 
-      <div class="form-group">
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required />
-      </div>
 
-      <fieldset>
-        <legend>Purpose of Message:</legend>
-        <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br/>
-        <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br/>
-        <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
-      </fieldset>
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+        </fieldset>
 
-      <div class="form-group">
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-      <div class="form-group">
         <label><input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter</label>
-      </div>
 
-      <button type="submit">Submit Message</button>
-    </form>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 White Water Rafting | Alex Osei Sarpong</p>
+    <p>&copy; 2025 White Water Rafting | Osei Sarpong Alex</p>
     <div class="social-icons">
-      <a href="https://facebook.com" target="_blank">
-        <img src="images/facebook.png" alt="Follow us on Facebook" />
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <img src="images/twitter.png" alt="Follow us on Twitter" />
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <img src="images/instagram.png" alt="Follow us on Instagram" />
-      </a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/instagram.jpg" alt="Instagram" /></a>
     </div>
+    <p><a href="images/contact-wireframe.png">View Wireframe</a></p>
   </footer>
 </body>
 </html>
