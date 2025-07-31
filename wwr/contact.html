@@ -2,81 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="Alex Osei Sarpong"/>
-  <meta name="description" content="Contact page for White Water Rafting site"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alex Osei Sarpong" />
+  <meta name="description" content="Contact Us page for White Water Rafting. Get in touch with our team and find our location." />
   <title>Contact Us | White Water Rafting</title>
-  <link rel="stylesheet" href="styles/rafting.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
-<body>
+<body class="contact-page">
   <header>
-    <img src="images/logo.png" alt="Rafting Site Logo">
+    <img src="images/logo.png" alt="Rafting Site Logo" />
     <h1>White Water Rafting</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="contact-info">
-      <h2>Contact Us</h2>
-      <p>Reach out to us with any questions or concerns!</p>
-      <p>Email: info@wwrafting.com</p>
-      <p>Phone: +233 24 000 0000</p>
-      <p>Address: White Water Rafting HQ, River Road, Accra, Ghana</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31700.983555222878!2d-0.21041653963230857!3d5.614818593437062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b56c69d1b83%3A0xa49c9e74913d98f9!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1694441698491!5m2!1sen!2sgh" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>Contact Information</h2>
+      <p>Email: info@wwr.com</p>
+      <p>Phone: +233 50 000 0000</p>
+      <p>Address: 123 River Rd, Adventure City, Ghana</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.979250926616!2d-1.2340000000000002!3d6.678000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdc9f7e0cb19e4b%3A0x0000000000000000!2sGhana!5e0!3m2!1sen!2sgh!4v1621234567890" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <section class="employee-profiles">
       <h2>Meet Our Team</h2>
       <div class="profiles">
         <figure>
-          <img src="images/employee1.jpg" alt="Emily - Manager">
-          <figcaption>Emily - Manager</figcaption>
+          <img src="images/employee1.jpg" alt="Employee 1" />
+          <figcaption>John Doe – Instructor</figcaption>
         </figure>
         <figure>
-          <img src="images/employee2.jpg" alt="Jake - Tour Guide">
-          <figcaption>Jake - Tour Guide</figcaption>
+          <img src="images/employee2.jpg" alt="Employee 2" />
+          <figcaption>Jane Smith – Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/employee3.jpg" alt="Linda - Customer Support">
-          <figcaption>Linda - Customer Support</figcaption>
+          <img src="images/employee3.jpg" alt="Employee 3" />
+          <figcaption>John Smith – Guide</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
-      <form action="thanks.html" method="post">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
+      <form action="#" method="post">
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" required />
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
+        <label for="useremail">Email:</label>
+        <input type="email" id="useremail" name="useremail" required />
 
-        <label for="purpose">Purpose</label>
-        <select id="purpose" name="purpose" required>
-          <option value="">--Select--</option>
-          <option value="inquiry">General Inquiry</option>
-          <option value="reservation">Reservation</option>
-          <option value="feedback">Feedback</option>
-        </select>
+        <label>Purpose of Message:</label>
+        <label><input type="radio" name="purpose" value="General Inquiry" required /> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="Reservation Question" /> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="Website Suggestion" /> Website Suggestion</label>
 
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+        <label for="usermessage">Your Message:</label>
+        <textarea id="usermessage" name="usermessage" rows="5" required></textarea>
 
-        <label>
-          <input type="checkbox" name="subscribe" />
-          Please subscribe me to the monthly newsletter
-        </label>
+        <label><input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter</label>
 
         <button type="submit">Send Message</button>
       </form>
@@ -84,11 +76,12 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 White Water Rafting | Alex Osei Sarpong</p>
+    <p>© 2025 White Water Rafting | Alex Osei Sarpong</p>
+    <a href="images/contact-wireframe.png">Wireframe</a>
     <div class="social-icons">
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/instagram.jpg" alt="Instagram" /></a>
     </div>
   </footer>
 </body>

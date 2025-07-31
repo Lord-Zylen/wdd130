@@ -138,7 +138,7 @@ footer {
   height: 30px;
 }
 
-/* Contact Page Styling */
+/* --- Contact Page Styling --- */
 .contact-info,
 .contact-form,
 .employee-profiles {
@@ -209,6 +209,7 @@ footer {
   background-color: #025aa5;
 }
 
+/* --- Responsive Layout --- */
 @media (max-width: 768px) {
   .employee-profiles .profiles {
     flex-direction: column;
@@ -238,3 +239,4 @@ footer {
     margin-top: 1rem;
   }
 }
+
